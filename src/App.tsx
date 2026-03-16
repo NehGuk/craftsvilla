@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom"
-import Home from "./Home/Home"
-import Nav from "./Nav/Nav"
-import Booking from "./Booking/Booking"
-import Gallery from "./Gallery/Gallery"
-import Contact from "./Contact/Contact"
+
+import Nav from "./Components/Nav/Nav"
+import Booking from "./Components/Booking/Booking"
+import Gallery from "./Components/Gallery/Gallery"
+import Contact from "./Components/Contact/Contact"
+import Home from "./Components/Home/Home"
 
 function App() {
   return (
