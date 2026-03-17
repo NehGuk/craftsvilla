@@ -11,7 +11,7 @@ function Booking() {
           src="https://teamup.com/ks65if3v84z3g7waoo?tz=Calendar%20default&showSearch=1&showProfileAndInfo=0&showSidepanel=1&showTitle=0&showViewHeader=0&showAgendaDetails=0&showDateControls=1&showDateRange=1"
           /* style={{ width: "80%", height: "600px" }} */
           loading="lazy"
-          title="Calendar"
+          title="Craftsvilla calendar"
         ></iframe>
       </section>
       <section>
