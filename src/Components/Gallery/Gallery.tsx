@@ -1,9 +1,11 @@
 function Gallery() {
   return (
-    <>
+    <section>
       <h1>Gallery</h1>
-      <p>Gallery here</p>
-    </>
+      <article>
+        <p>Gallery here</p>
+      </article>
+    </section>
   )
 }
 

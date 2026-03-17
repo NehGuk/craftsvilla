@@ -2,9 +2,9 @@ import { Link } from "react-router-dom"
 
 function MosaikkKunst() {
   return (
-    <>
-      <section>
-        <h1>Mosaikk Kunst</h1>
+    <section>
+      <h1>Mosaikk Kunst</h1>
+      <article>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
           blanditiis dicta? Odio in itaque ducimus sed magnam, sit eligendi
@@ -18,10 +18,12 @@ function MosaikkKunst() {
           <li>Små fargede steiner</li>
           <li>Gummi</li>
         </ul>
+      </article>
+      <article>
         <p>Pris: NOK 400</p>
-        <Link to="/booking">Book now</Link>
-      </section>
-    </>
+      </article>
+      <Link to="/booking">Book now</Link>
+    </section>
   )
 }
 
