@@ -9,6 +9,7 @@ import About from "./Components/About/About"
 import Lerretsmaling from "./Components/Activities/Lerretsmaling/Lerretsmaling"
 import Akvarellmaling from "./Components/Activities/Akvarellmaling/Akvarellmaling"
 import MosaikkKunst from "./Components/Activities/MosaikkKunst/MosaikkKunst"
+import ThankYou from "./Components/ThankYou/ThankYou"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thankyou" element={<ThankYou />} />
           <Route path="/activities/mosaikkkunst" element={<MosaikkKunst />} />
           <Route
             path="/activities/akvarellmaling"
