@@ -4,9 +4,9 @@ function Home() {
     <>
       <h1>Home</h1>
       <p>Home content here. Section with link to activities.</p>
-      <Link to="/activities/mosaikkkunst">Mosaikk Kunst link here</Link>
-      <Link to="/activities/akvarellmaling">Akvarellmaling link here</Link>
-      <Link to="/activities/lerretsmaling">Lerretsmaling link here</Link>
+      <Link to="/activities/mosaikkkunst">Mosaikk Kunst</Link>
+      <Link to="/activities/akvarellmaling">Akvarellmaling</Link>
+      <Link to="/activities/lerretsmaling">Lerretsmaling</Link>
     </>
   )
 }

@@ -1,9 +1,26 @@
+import { Link } from "react-router-dom"
+
 function Akvarellmaling() {
   return (
     <>
-      <h1>Akvarellmaling</h1>
-      <p>Stuff here</p>
-      <p>CTA</p>
+      <section>
+        <h1>Akvarellmaling</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          blanditiis dicta? Odio in itaque ducimus sed magnam, sit eligendi
+          sapiente enim, cupiditate voluptate laboriosam dolore necessitatibus.
+          Ab alias molestiae cumque. Sett inkluderer: Ramme, A4 størrelse
+          treplate, små fargede steiner, gummi.
+        </p>
+        <ul>
+          <li>Ramme</li>
+          <li>Akvarellpapir med designmal</li>
+          <li>Akvarellfarger</li>
+          <li>Pensler</li>
+        </ul>
+        <p>Pris: NOK 200</p>
+        <Link to="/booking">Book now</Link>
+      </section>
     </>
   )
 }
