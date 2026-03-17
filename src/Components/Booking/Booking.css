@@ -6,3 +6,11 @@ iframe {
 
 .cta {
 }
+
+@media (max-width: 800px) {
+  iframe {
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 600px;
+  }
+}
