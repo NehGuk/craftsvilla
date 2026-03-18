@@ -8,6 +8,29 @@
 }
 
 nav {
+  background-color: antiquewhite;
+  min-height: 20vh;
+
+  /* min-height: 20vh; */
   font-family: "Mynerve", handwriting;
   color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_white_space {
+  background-color: azure;
+  margin-left: auto;
+}
+
+.nav_logo {
+  margin-left: auto;
+}
+
+.nav_items {
+  margin-left: auto;
+  padding-right: 2rem;
+  display: flex;
+  gap: 2rem;
 }
