@@ -10,27 +10,55 @@
 nav {
   background-color: antiquewhite;
   min-height: 20vh;
-
-  /* min-height: 20vh; */
-  font-family: "Mynerve", handwriting;
+  font-family: var(--font-pair);
   color: var(--color-accent);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.nav_white_space {
-  background-color: azure;
-  margin-left: auto;
+  padding: 2rem;
 }
 
 .nav_logo {
-  margin-left: auto;
+  /* background-color: blue; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  justify-self: center;
 }
 
-.nav_items {
-  margin-left: auto;
-  padding-right: 2rem;
+.nav_items_1 {
+  /* background-color: green; */
+  margin-right: auto;
   display: flex;
   gap: 2rem;
+}
+.nav_items_2 {
+  /* background-color: purple; */
+  margin-left: auto;
+
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav_items_1 {
+    flex-direction: column;
+    order: 1;
+    margin-right: 0;
+    gap: 1rem;
+  }
+
+  .nav_items_2 {
+    flex-direction: column;
+    order: 2;
+    margin-left: 0;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  .nav_logo {
+    order: 0;
+  }
 }
