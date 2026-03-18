@@ -1,11 +1,17 @@
+import "./ThankYou.css"
 import { Link } from "react-router-dom"
 
 function ThankYou() {
   return (
-    <section>
-      <h1>Thank you</h1>
-      <p>We'll be in touch as soon as possible.</p>
-      <Link to="/booking">Back to home</Link>
+    <section className="content">
+      <h1>Thank you!</h1>
+      <article className="thank_you_message">
+        <p>
+          Your message has been received and we'll be in touch as soon as
+          possible.
+        </p>
+        <Link to="/">Back to home</Link>
+      </article>
     </section>
   )
 }

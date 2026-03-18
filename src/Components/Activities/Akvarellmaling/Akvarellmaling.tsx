@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Akvarellmaling() {
   return (
-    <section>
+    <section className="content">
       <h1>Akvarellmaling</h1>
       <article>
         <p>

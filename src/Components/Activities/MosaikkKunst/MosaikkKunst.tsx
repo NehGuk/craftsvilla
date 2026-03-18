@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function MosaikkKunst() {
   return (
-    <section>
+    <section className="content">
       <h1>Mosaikk Kunst</h1>
       <article>
         <p>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Lerretsmaling() {
   return (
-    <section>
+    <section className="content">
       <h1>Lerretsmaling</h1>
       <article>
         <p>

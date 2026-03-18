@@ -25,7 +25,7 @@ function Contact() {
   }
 
   return (
-    <section>
+    <section className="content">
       <h1>Contact</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <label>Name</label>
