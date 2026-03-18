@@ -13,7 +13,8 @@ import ThankYou from "./Components/ThankYou/ThankYou"
 
 function App() {
   return (
-    <>
+    <div className="app_container">
+      <Nav />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,8 +31,7 @@ function App() {
           <Route path="/activities/lerretsmaling" element={<Lerretsmaling />} />
         </Routes>
       </main>
-      <Nav />
-    </>
+    </div>
   )
 }
 

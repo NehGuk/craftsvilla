@@ -5,13 +5,47 @@
 
 .main_container {
   display: flex;
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* grid-template-rows:; */
-  gap: 1rem;
-  width: 100%;
-  justify-content: space-between;
+  height: 80vh;
 }
 
-.area_activity {
+.area_activity_1,
+.area_activity_2,
+.area_activity_3 {
   background-color: blue;
+  flex: 1;
+  color: white;
+  font-size: var(--font-size-lg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding-bottom: 9rem;
+}
+
+.area_activity_1 {
+  background-image: url(../../assets/gallery/mosaikkkunst/anna-hu-m4wgQdEsJZU-unsplash.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.area_activity_2 {
+  background-image: url(../../assets/gallery/akvarellmaling/annie-spratt-sVAXV_PbvLs-unsplash.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.area_activity_3 {
+  background-image: url(../../assets/gallery/leirettsmaling/europeana-a0KlhY8GXPg-unsplash.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.area_title {
+  transform: rotate(-90deg);
+  font-size: var(--font-size-xlg);
+  color: var(--color-text-light);
+  white-space: nowrap;
+  margin-right: -3rem;
+
+  /* color: yellow; */
 }

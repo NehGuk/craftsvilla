@@ -10,16 +10,17 @@
 
 /* colours and typography*/
 :root {
-  --color-background-light: white;
+  --color-background-light: rgb(237, 237, 237);
   --color-background-gray: grey;
   --color-text-dark: rgb(68, 68, 68);
-
+  --color-text-light: rgb(237, 237, 237);
   --color-accent: brown;
   --font-base: "Akshar", sans-serif;
   --font-pair: "Mynerve", handwriting;
   --font-size-sm: 1rem;
   --font-size-md: 1.2rem;
   --font-size-lg: 1.5rem;
+  --font-size-xlg: 3rem;
 }
 
 body {
@@ -36,6 +37,7 @@ h1 {
 a,
 a:visited {
   text-decoration: none;
+  color: var(--color-text-dark);
 }
 
 a:hover {

@@ -8,10 +8,9 @@
 }
 
 nav {
-  background-color: antiquewhite;
-  min-height: 20vh;
+  background-color: var(--color-background-light);
+
   font-family: var(--font-pair);
-  color: var(--color-accent);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,20 +18,15 @@ nav {
 }
 
 .nav_logo {
-  /* background-color: blue; */
-  /* margin-left: auto;
-  margin-right: auto; */
   justify-self: center;
 }
 
 .nav_items_1 {
-  /* background-color: green; */
   margin-right: auto;
   display: flex;
   gap: 2rem;
 }
 .nav_items_2 {
-  /* background-color: purple; */
   margin-left: auto;
 
   display: flex;
