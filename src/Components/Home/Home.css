@@ -46,6 +46,6 @@
   color: var(--color-text-light);
   white-space: nowrap;
   margin-right: -3rem;
-
+  text-shadow: 0px 2px 9px rgba(0, 0, 0, 0.7);
   /* color: yellow; */
 }
