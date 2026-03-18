@@ -1,0 +1,15 @@
+.main_container h1 {
+  display: none;
+  height: 400px;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:;
+  gap: 1rem;
+}
+
+.area_activity {
+  background-color: blue;
+}

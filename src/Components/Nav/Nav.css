@@ -6,3 +6,8 @@
   height: clamp(5rem, 4vw, 10rem);
   width: auto;
 }
+
+nav {
+  font-family: "Mynerve", handwriting;
+  color: var(--color-accent);
+}
