@@ -1,9 +1,23 @@
 iframe {
   border: 1px solid lightgray;
-  width: 70%;
+  width: 100%;
   height: 600px;
 }
 
+.booking {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking h1 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.booking_content {
+  max-width: 800px;
+  margin: 3rem auto;
+}
 .cta {
 }
 

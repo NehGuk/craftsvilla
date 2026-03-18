@@ -1,8 +1,9 @@
+import "./About.css"
 import { Link } from "react-router-dom"
 
 function About() {
   return (
-    <section>
+    <section className="content">
       <h1>About</h1>
       <p>
         Craftsvilla har som mål å tilby kreative workshops og aktiviteter som

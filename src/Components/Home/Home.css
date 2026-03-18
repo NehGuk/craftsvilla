@@ -5,7 +5,7 @@
 
 .main_container {
   display: flex;
-  height: 80vh;
+  min-height: 90vh;
 }
 
 .area_activity_1,
@@ -20,10 +20,11 @@
   justify-content: flex-end;
   overflow: hidden;
   padding-bottom: 9rem;
+  transition: ease-in-out 0.2s;
 }
 
 .area_activity_1 {
-  background-image: url(../../assets/gallery/mosaikkkunst/anna-hu-m4wgQdEsJZU-unsplash.jpg);
+  background-image: url(../../assets/gallery/mosaikkkunst/iryna-muller-nEbUNxYaWQU-unsplash.jpg);
   background-size: cover;
   filter: grayscale(100%);
 }
@@ -45,7 +46,29 @@
   font-size: var(--font-size-xlg);
   color: var(--color-text-light);
   white-space: nowrap;
-  margin-right: -3rem;
-
+  margin: 0 -6rem 6rem 0;
+  text-shadow: 0px 2px 9px rgba(0, 0, 0, 0.7);
   /* color: yellow; */
 }
+
+.area_activity_1:hover,
+.area_activity_2:hover,
+.area_activity_3:hover {
+  filter: grayscale(50%);
+  transition: ease-in-out 0.2s;
+}
+
+@media (max-width: 800px) {
+  .area_title {
+    margin: 0 -9rem 6rem 0;
+
+    /* color: yellow; */
+  }
+}
+
+/* @media (min-width: 1800px) {
+  .area_title {
+    font-size: var(--font-size-xlg);
+    margin: 5rem 1rem;
+  }
+} */
