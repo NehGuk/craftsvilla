@@ -1,0 +1,60 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+label {
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid var(--color-background-dark);
+  background: transparent;
+  color: inherit;
+  outline: none;
+  transition: var(--smooth);
+  opacity: 0.6;
+}
+
+input:focus,
+textarea:focus {
+  opacity: 1;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 12rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-dark);
+}
+
+form p {
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+}
+
+input.error,
+textarea.error {
+  border-color: var(--color-accent);
+}
+
+.submit_area {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  form {
+    min-height: 90vh;
+  }
+}
