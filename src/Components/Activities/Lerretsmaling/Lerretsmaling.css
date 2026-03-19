@@ -1,0 +1,35 @@
+.activity_text {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.activity_details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.activity_details__info p {
+  font-weight: 500;
+}
+
+.activity_details__info ul {
+  list-style: none;
+  max-width: 420px;
+}
+
+.activity_details__info ul li {
+  border: 1px solid var(--color-text-dark);
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.activity_details__price {
+  color: var(--color-accent);
+}
+
+.activity_cta {
+  margin: 3rem 0;
+}

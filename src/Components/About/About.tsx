@@ -7,8 +7,12 @@ function About() {
     <section className="content">
       <h1>About</h1>
       <article>
-        <img src={aboutImg} className="decoImg" />
-        <p className="aboutText">
+        <img
+          src={aboutImg}
+          className="deco_img"
+          alt="About us: decorative image"
+        />
+        <p className="about_text">
           <strong>Craftsvilla</strong> har som mål å tilby kreative workshops og
           aktiviteter som fremmer samhold og avslapning blant ulike grupper som
           foreldre og barn, venner, kolleger og flere. Målet er å skape et

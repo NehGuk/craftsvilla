@@ -10,7 +10,11 @@ function ThankYou() {
           Your message has been received and we'll be in touch as soon as
           possible.
         </p>
-        <Link to="/">Back to home</Link>
+        <div className="thank_you_message__cta">
+          <Link to="/" className="cta">
+            Back to home
+          </Link>
+        </div>
       </article>
     </section>
   )
