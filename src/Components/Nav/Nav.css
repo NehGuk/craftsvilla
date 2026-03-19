@@ -9,7 +9,6 @@
 
 nav {
   background-color: var(--color-background-light);
-
   font-family: var(--font-pair);
   display: flex;
   justify-content: center;
@@ -36,6 +35,7 @@ nav {
 @media (max-width: 800px) {
   nav {
     flex-direction: column;
+    margin-bottom: 2rem;
   }
 
   .nav_items_1 {

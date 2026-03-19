@@ -62,6 +62,11 @@ iframe {
   order: 2;
   flex: 1;
 }
+
+.submit_area button {
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   iframe {
     border: 1px solid lightgray;
