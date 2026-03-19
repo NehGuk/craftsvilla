@@ -25,6 +25,21 @@ iframe {
   margin-top: 3rem;
 }
 
+.activity span {
+  transition: var(--smooth);
+}
+
+.activity span::after {
+  content: " »";
+  transition: var(--smooth);
+  display: inline-block;
+  padding-left: 3px;
+}
+
+.activity span:hover::after {
+  transform: translateX(3px);
+}
+
 .signup_info {
   display: flex;
 }

@@ -14,35 +14,42 @@ function Booking() {
         ></iframe>
       </article>
       <article className="booking_content">
-        <h2>Mosaikk Kunst</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi
-          rem suscipit fugit veniam, ratione fuga id voluptatibus ullam aliquam.{" "}
-          <Link to="/activities/mosaikkkunst">
-            <span>Read more</span>
-          </Link>
-        </p>
-        <p>NOK 400</p>
-        <h2>Akvarellmaling</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi
-          rem suscipit fugit veniam, ratione fuga id voluptatibus ullam aliquam
-          quia accusantium quasi.{" "}
-          <Link to="/activities/akvarellmaling">
-            <span>Read more</span>
-          </Link>
-        </p>
-        <p>NOK 300</p>
-        <h2>Lerretsmaling</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi
-          rem suscipit fugit veniam, ratione fuga id voluptatibus ullam aliquam
-          quia.{" "}
-          <Link to="/activities/lerretsmaling">
-            <span>Read more</span>
-          </Link>
-        </p>
-        <p>NOK 200</p>
+        <div className="activity">
+          <h2>Mosaikk Kunst</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            commodi rem suscipit fugit veniam, ratione fuga id voluptatibus
+            ullam aliquam.{" "}
+            <Link to="/activities/mosaikkkunst">
+              <span>Read more</span>
+            </Link>
+          </p>
+          <p>NOK 400</p>
+        </div>
+        <div className="activity">
+          <h2>Akvarellmaling</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            commodi rem suscipit fugit veniam, ratione fuga id voluptatibus
+            ullam aliquam quia accusantium quasi.{" "}
+            <Link to="/activities/akvarellmaling">
+              <span>Read more</span>
+            </Link>
+          </p>
+          <p>NOK 300</p>
+        </div>
+        <div className="activity">
+          <h2>Lerretsmaling</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            commodi rem suscipit fugit veniam, ratione fuga id voluptatibus
+            ullam aliquam quia.{" "}
+            <Link to="/activities/lerretsmaling">
+              <span>Read more</span>
+            </Link>
+          </p>
+          <p>NOK 200</p>
+        </div>
       </article>
       <article className="booking_content">
         <div className="signup_info">
