@@ -31,10 +31,6 @@ iframe {
   gap: 1.5rem;
 }
 
-.activity {
-  /* background-color: var(--color-background-dark); */
-}
-
 .price {
   color: var(--color-accent);
 }
