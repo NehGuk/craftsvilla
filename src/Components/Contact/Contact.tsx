@@ -1,3 +1,4 @@
+import "./Contact.css"
 import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router-dom"
 
@@ -33,6 +34,7 @@ function Contact() {
           {...register("name", { required: "Name is required." })}
           type="text"
           placeholder="Your name"
+          className={errors.name ? "error" : ""}
         />
         {errors.name && <p>{errors.name.message}</p>}
 
@@ -76,7 +78,11 @@ function Contact() {
           placeholder="Your message here."
         />
         {errors.message && <p>{errors.message.message}</p>}
-        <button type="submit">Submit</button>
+        <div className="submit_area">
+          <button type="submit" className="cta">
+            Submit
+          </button>
+        </div>
       </form>
     </section>
   )
