@@ -12,7 +12,8 @@
 :root {
   --color-background-light: rgb(246, 246, 246);
   --color-background-gray: rgb(237, 237, 237);
-  --color-text-dark: rgb(68, 68, 68);
+  --color-background-dark: rgb(52, 52, 52);
+  --color-text-dark: rgb(108, 108, 108);
   --color-text-light: rgb(237, 237, 237);
   --color-accent: brown;
   --font-base: "Akshar", sans-serif;
