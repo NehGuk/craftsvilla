@@ -8,10 +8,10 @@
   padding: 0;
 }
 
-/* colours and typography*/
+/* colours, typography and transition*/
 :root {
-  --color-background-light: rgb(237, 237, 237);
-  --color-background-gray: grey;
+  --color-background-light: rgb(246, 246, 246);
+  --color-background-gray: rgb(237, 237, 237);
   --color-text-dark: rgb(68, 68, 68);
   --color-text-light: rgb(237, 237, 237);
   --color-accent: brown;
@@ -21,6 +21,7 @@
   --font-size-md: 1.2rem;
   --font-size-lg: 1.5rem;
   --font-size-xlg: 4rem;
+  --smooth: ease-in-out 0.2s;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   font-weight: 300;
   font-size: var(--font-size-md);
   color: var(--color-text-dark);
+  background-color: var(--color-background-light);
 }
 
 h1 {
@@ -42,6 +44,21 @@ a:visited {
 
 a:hover {
   color: var(--color-accent);
+}
+
+.cta {
+  background-color: var(--color-text-dark);
+  color: var(--color-text-light) !important;
+  padding: 1rem 4rem;
+  border: solid 3px;
+  transition: var(--smooth);
+}
+
+.cta:hover {
+  background-color: var(--color-text-light);
+  color: var(--color-text-dark) !important;
+  border: solid 3px;
+  transition: var(--smooth);
 }
 /* :root {
   --text: #6b6375;

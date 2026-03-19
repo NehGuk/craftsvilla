@@ -1,0 +1,19 @@
+.decoImg {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.aboutText {
+  margin: 1.5rem 0 3rem 0;
+}
+
+.cta_container {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .decoImg {
+    height: 26rem;
+  }
+}

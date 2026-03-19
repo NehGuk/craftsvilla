@@ -11,7 +11,7 @@ nav {
 main {
   order: 2;
   min-height: 90vh;
-  background-color: lightgrey;
+  background-color: var(--color-background-light);
 }
 
 main .content {
