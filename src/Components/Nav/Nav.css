@@ -2,11 +2,6 @@
   font-weight: 700;
 }
 
-.logo_nav {
-  height: clamp(5rem, 4vw, 10rem);
-  width: auto;
-}
-
 nav {
   background-color: var(--color-background-light);
   font-family: var(--font-pair);
@@ -20,6 +15,16 @@ nav {
   justify-self: center;
 }
 
+.logo_nav {
+  height: clamp(5rem, 4vw, 10rem);
+  width: auto;
+  transition: var(--smooth);
+}
+
+.logo_nav:hover {
+  scale: 1.03;
+  transition: var(--smooth);
+}
 .nav_items_1 {
   margin-right: auto;
   display: flex;
