@@ -8,6 +8,7 @@ iframe {
 .booking {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .booking h1 {
@@ -19,13 +20,64 @@ iframe {
   max-width: 800px;
   margin: 3rem auto;
 }
-.cta {
+
+.booking_content .cta_container {
+  margin-top: 3rem;
 }
 
+.cards_area {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.activity {
+  /* background-color: var(--color-background-dark); */
+}
+
+.price {
+  color: var(--color-accent);
+}
+.activity span {
+  transition: var(--smooth);
+}
+
+.activity span::after {
+  content: " »";
+  transition: var(--smooth);
+  display: inline-block;
+  padding-left: 3px;
+}
+
+.activity span:hover::after {
+  transform: translateX(3px);
+}
+
+.signup_info {
+  display: flex;
+}
+
+.signup_info_text {
+  order: 1;
+  flex: 1;
+}
+
+.signup_info_cta {
+  order: 2;
+  flex: 1;
+}
 @media (max-width: 800px) {
   iframe {
     border: 1px solid lightgray;
     width: 100%;
     height: 600px;
+  }
+
+  .activity span {
+    display: block;
+  }
+
+  .signup_info {
+    flex-direction: column;
   }
 }

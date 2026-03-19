@@ -14,42 +14,61 @@ function Booking() {
         ></iframe>
       </article>
       <article className="booking_content">
-        <h2>Mosaikk Kunst</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi
-          rem suscipit fugit veniam, ratione fuga id voluptatibus ullam aliquam
-          quia accusantium quasi voluptatum modi. Repellat rerum dignissimos
-          harum veritatis?
-        </p>
-        <p>Pris: NOK 400</p>
-        <h2>Akvarellmaling</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi
-          rem suscipit fugit veniam, ratione fuga id voluptatibus ullam aliquam
-          quia accusantium quasi voluptatum modi. Repellat rerum dignissimos
-          harum veritatis?
-        </p>
-        <p>Pris: NOK 300</p>
-        <h2>Lerretsmaling</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi
-          rem suscipit fugit veniam, ratione fuga id voluptatibus ullam aliquam
-          quia accusantium quasi voluptatum modi. Repellat rerum dignissimos
-          harum veritatis?
-        </p>
-        <p>Pris: NOK 200</p>
+        <div className="cards_area">
+          <div className="activity">
+            <h2>Mosaikk Kunst</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              commodi rem suscipit fugit veniam, ratione fuga id voluptatibus
+              ullam aliquam.{" "}
+              <Link to="/activities/mosaikkkunst">
+                <span>Read more</span>
+              </Link>
+            </p>
+            <p className="price">NOK 400</p>
+          </div>
+          <div className="activity">
+            <h2>Akvarellmaling</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              commodi rem suscipit fugit veniam, ratione fuga id voluptatibus
+              ullam aliquam quia accusantium quasi.{" "}
+              <Link to="/activities/akvarellmaling">
+                <span>Read more</span>
+              </Link>
+            </p>
+            <p className="price">NOK 300</p>
+          </div>
+          <div className="activity">
+            <h2>Lerretsmaling</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              commodi rem suscipit fugit veniam, ratione fuga id voluptatibus
+              ullam aliquam quia.{" "}
+              <Link to="/activities/lerretsmaling">
+                <span>Read more</span>
+              </Link>
+            </p>
+            <p className="price">NOK 200</p>
+          </div>
+        </div>
       </article>
       <article className="booking_content">
-        <h2>How to sign up</h2>
-        <p>
-          On the calendar above, find the desired session and click "Signup".
-          For personalised sessions, or inquiries regarding larger groups,
-          please get in touch and our team will get back to you in the coming
-          days.
-        </p>
-        <Link to="/contact" className="cta">
-          Get in touch
-        </Link>
+        <div className="signup_info">
+          <div className="signup_info_text">
+            <p>
+              <strong>How to sign up?</strong> On the calendar above, find the
+              desired session and click "Signup". For personalised sessions, or
+              inquiries regarding larger groups, please get in touch and our
+              team will get back to you in the coming days.
+            </p>
+          </div>
+          <div className="cta_container signup_info_cta">
+            <Link to="/contact" className="cta">
+              Get in touch
+            </Link>
+          </div>
+        </div>
       </article>
     </section>
   )

@@ -5,8 +5,8 @@ import aboutImg from "../../assets/gallery/leirettsmaling/josep-martins-l3-erg8n
 function About() {
   return (
     <section className="content">
+      <h1>About</h1>
       <article>
-        <h1>About</h1>
         <img src={aboutImg} className="decoImg" />
         <p className="aboutText">
           <strong>Craftsvilla</strong> har som mål å tilby kreative workshops og
