@@ -59,6 +59,6 @@ textarea.error {
 
 @media (max-width: 800px) {
   form {
-    min-height: 90vh;
+    min-height: 90dvh;
   }
 }

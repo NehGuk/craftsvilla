@@ -5,7 +5,7 @@
 
 .main_container {
   display: flex;
-  min-height: 90vh;
+  min-height: 90dvh;
 }
 
 .area_activity_1,
