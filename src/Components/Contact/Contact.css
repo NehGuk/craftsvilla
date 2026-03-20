@@ -53,6 +53,10 @@ textarea.error {
   margin-top: 1.5rem;
 }
 
+.submit_area button {
+  font-size: var(--font-size-sm);
+}
+
 @media (max-width: 800px) {
   form {
     min-height: 90vh;
