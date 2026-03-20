@@ -1,5 +1,5 @@
 import "./App.css"
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import Nav from "./Components/Nav/Nav"
 import Booking from "./Components/Booking/Booking"
 import Gallery from "./Components/Gallery/Gallery"
@@ -10,10 +10,20 @@ import Lerretsmaling from "./Components/Activities/Lerretsmaling/Lerretsmaling"
 import Akvarellmaling from "./Components/Activities/Akvarellmaling/Akvarellmaling"
 import MosaikkKunst from "./Components/Activities/MosaikkKunst/MosaikkKunst"
 import ThankYou from "./Components/ThankYou/ThankYou"
+import { useEffect } from "react"
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
 function App() {
   return (
     <div className="app_container">
+      <ScrollToTop />
       <Nav />
       <main>
         <Routes>
