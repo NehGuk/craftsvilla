@@ -1,7 +1,11 @@
 import "./Gallery.css"
 import { ColumnsPhotoAlbum } from "react-photo-album"
 import "react-photo-album/columns.css"
-
+import Lightbox from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
+import "yet-another-react-lightbox/plugins/captions.css"
+import { Captions } from "yet-another-react-lightbox/plugins"
+import { useState } from "react"
 import img1 from "../../assets/gallery/akvarellmaling/annie-spratt-sVAXV_PbvLs-unsplash.jpg"
 import img2 from "../../assets/gallery/akvarellmaling/evie-s-MicqqGyDQ6w-unsplash.jpg"
 import img3 from "../../assets/gallery/akvarellmaling/geordanna-cordero-2Qg4y32pdCc-unsplash.jpg"
@@ -26,138 +30,183 @@ import img21 from "../../assets/gallery/leirettsmaling/josep-martins-l3-erg8nPRU
 import img22 from "../../assets/gallery/leirettsmaling/klara-kulikova-kiLdjFm2y14-unsplash.jpg"
 
 function Gallery() {
+  const [index, setIndex] = useState(-1)
   const photos = [
     {
       src: img1,
       width: 800,
       height: 1200,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img2,
       width: 800,
       height: 400,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img3,
       width: 800,
       height: 600,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img4,
       width: 800,
       height: 1300,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img5,
       width: 800,
       height: 700,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img6,
       width: 800,
       height: 300,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img7,
       width: 800,
       height: 800,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img8,
       width: 800,
       height: 600,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img9,
       width: 800,
       height: 500,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img10,
       width: 800,
       height: 700,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img11,
       width: 800,
       height: 400,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img12,
       width: 800,
       height: 900,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img13,
       width: 800,
       height: 300,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img14,
       width: 800,
       height: 800,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img15,
       width: 800,
       height: 600,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img16,
       width: 800,
       height: 700,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img17,
       width: 800,
       height: 1500,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img18,
       width: 800,
       height: 600,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img19,
       width: 800,
       height: 700,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img20,
       width: 800,
       height: 400,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img21,
       width: 800,
       height: 600,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
     {
       src: img22,
       width: 800,
       height: 600,
       alt: "Example of alt text here",
+      description:
+        "Image description here: blablablabla | Credits: Photographer name",
     },
   ]
   {
@@ -175,6 +224,21 @@ function Gallery() {
             if (containerWidth < 768) return 3
             return 4
           }}
+          onClick={({ index }) => setIndex(index)}
+        />
+        <Lightbox
+          open={index >= 0}
+          index={index}
+          close={() => setIndex(-1)}
+          slides={photos}
+          controller={{ closeOnBackdropClick: true }}
+          styles={{
+            root: { "--yarl__color_backdrop": "rgba(0, 0, 0, 0.9)" },
+            captionsDescription: {
+              "--yarl__slide_description_text_align": "center",
+            },
+          }}
+          plugins={[Captions]}
         />
       </article>
     </section>
