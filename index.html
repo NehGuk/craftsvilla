@@ -9,5 +9,12 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Netlify form detection -->
+    <form name="contact" data-netlify="true" hidden>
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <textarea name="message"></textarea>
+    </form>
   </body>
 </html>

@@ -19,8 +19,15 @@ function Contact() {
     reset,
   } = useForm<FormData>()
 
-  function onSubmit(data: FormData) {
-    console.log(data)
+  async function onSubmit(data: FormData) {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        "form-name": "contact",
+        ...data,
+      }).toString(),
+    })
     reset()
     navigate("/thankyou")
   }
