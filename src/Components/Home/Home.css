@@ -60,14 +60,5 @@
 @media (max-width: 800px) {
   .area_title {
     margin: 0 -9rem 6rem 0;
-
-    /* color: yellow; */
   }
 }
-
-/* @media (min-width: 1800px) {
-  .area_title {
-    font-size: var(--font-size-xlg);
-    margin: 5rem 1rem;
-  }
-} */
