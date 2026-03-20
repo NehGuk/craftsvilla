@@ -1,6 +1,6 @@
 import "./MosaikkKunst.css"
 import { Link } from "react-router-dom"
-import mosaikkKunstCover from "../../../assets/gallery/mosaikkkunst/anna-hu-m4wgQdEsJZU-unsplash.jpg"
+import mosaikkKunstCover from "../../../assets/gallery/mosaikkkunst/anna-hu-m4wgQdEsJZU-unsplash.webp"
 
 function MosaikkKunst() {
   return (

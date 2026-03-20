@@ -24,19 +24,19 @@
 }
 
 .area_activity_1 {
-  background-image: url(../../assets/gallery/mosaikkkunst/iryna-muller-nEbUNxYaWQU-unsplash.jpg);
+  background-image: url(../../assets/gallery/mosaikkkunst/iryna-muller-nEbUNxYaWQU-unsplash.webp);
   background-size: cover;
   filter: grayscale(100%);
 }
 
 .area_activity_2 {
-  background-image: url(../../assets/gallery/akvarellmaling/annie-spratt-sVAXV_PbvLs-unsplash.jpg);
+  background-image: url(../../assets/gallery/akvarellmaling/annie-spratt-sVAXV_PbvLs-unsplash.webp);
   background-size: cover;
   filter: grayscale(100%);
 }
 
 .area_activity_3 {
-  background-image: url(../../assets/gallery/leirettsmaling/europeana-a0KlhY8GXPg-unsplash.jpg);
+  background-image: url(../../assets/gallery/leirettsmaling/europeana-a0KlhY8GXPg-unsplash.webp);
   background-size: cover;
   filter: grayscale(100%);
 }

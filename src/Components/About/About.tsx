@@ -1,6 +1,6 @@
 import "./About.css"
 import { Link } from "react-router-dom"
-import aboutImg from "../../assets/gallery/leirettsmaling/josep-martins-l3-erg8nPRU-unsplash.jpg"
+import aboutImg from "../../assets/gallery/leirettsmaling/josep-martins-l3-erg8nPRU-unsplash.webp"
 
 function About() {
   return (

@@ -1,6 +1,6 @@
 import "./Akvarellmaling.css"
 import { Link } from "react-router-dom"
-import akvarellmalingCover from "../../../assets/gallery/akvarellmaling/greg-rosenke-TMXIWZncTZU-unsplash.jpg"
+import akvarellmalingCover from "../../../assets/gallery/akvarellmaling/greg-rosenke-TMXIWZncTZU-unsplash.webp"
 
 function Akvarellmaling() {
   return (

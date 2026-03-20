@@ -1,6 +1,6 @@
 import "./Lerretsmaling.css"
 import { Link } from "react-router-dom"
-import lerretsmalingCover from "../../../assets/gallery/leirettsmaling/anne-nygard-HUdZ00yfTXE-unsplash.jpg"
+import lerretsmalingCover from "../../../assets/gallery/leirettsmaling/anne-nygard-HUdZ00yfTXE-unsplash.webp"
 
 function Lerretsmaling() {
   return (
