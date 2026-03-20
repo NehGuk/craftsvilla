@@ -7,6 +7,7 @@ Craftsvilla har som mål å tilby kreative workshops og aktiviteter som fremmer 
 
 ## Notes
 
-- Still needs some work on responsiveness for large screens
-- The colour palette has not been checked for accessibility yet
-- Needs a better logo
+- Still needs some work on responsiveness for large screens.
+- The colour palette has not been checked for accessibility yet.
+- Needs a better logo.
+- It's mixing English and Norwegian. A translation functionality should be implemented.
