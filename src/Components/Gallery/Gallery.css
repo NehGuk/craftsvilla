@@ -1,0 +1,17 @@
+/* .gallery {
+  max-width: 100vw;
+  margin: 0 auto;
+} */
+
+.gallery h1 {
+  text-align: center;
+  margin: 3rem 0;
+}
+.gallery_area {
+  width: 100%;
+  min-height: 300px;
+}
+
+.gallery_area img {
+  object-fit: cover;
+}
