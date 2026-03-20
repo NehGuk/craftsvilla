@@ -1,6 +1,6 @@
 import "./Gallery.css"
-import { MasonryPhotoAlbum } from "react-photo-album"
-import "react-photo-album/masonry.css"
+import { ColumnsPhotoAlbum } from "react-photo-album"
+import "react-photo-album/columns.css"
 
 import img1 from "../../assets/gallery/akvarellmaling/annie-spratt-sVAXV_PbvLs-unsplash.jpg"
 import img2 from "../../assets/gallery/akvarellmaling/evie-s-MicqqGyDQ6w-unsplash.jpg"
@@ -30,112 +30,134 @@ function Gallery() {
     {
       src: img1,
       width: 800,
-      height: 500,
+      height: 1200,
+      alt: "Example of alt text here",
     },
     {
       src: img2,
       width: 800,
       height: 400,
+      alt: "Example of alt text here",
     },
     {
       src: img3,
       width: 800,
       height: 600,
+      alt: "Example of alt text here",
     },
     {
       src: img4,
       width: 800,
-      height: 650,
+      height: 1300,
+      alt: "Example of alt text here",
     },
     {
       src: img5,
       width: 800,
       height: 700,
+      alt: "Example of alt text here",
     },
     {
       src: img6,
       width: 800,
       height: 300,
+      alt: "Example of alt text here",
     },
     {
       src: img7,
       width: 800,
       height: 800,
+      alt: "Example of alt text here",
     },
     {
       src: img8,
       width: 800,
       height: 600,
+      alt: "Example of alt text here",
     },
     {
       src: img9,
       width: 800,
       height: 500,
+      alt: "Example of alt text here",
     },
     {
       src: img10,
       width: 800,
       height: 700,
+      alt: "Example of alt text here",
     },
     {
       src: img11,
       width: 800,
       height: 400,
+      alt: "Example of alt text here",
     },
     {
       src: img12,
       width: 800,
       height: 900,
+      alt: "Example of alt text here",
     },
     {
       src: img13,
       width: 800,
       height: 300,
+      alt: "Example of alt text here",
     },
     {
       src: img14,
       width: 800,
       height: 800,
+      alt: "Example of alt text here",
     },
     {
       src: img15,
       width: 800,
       height: 600,
+      alt: "Example of alt text here",
     },
     {
       src: img16,
       width: 800,
       height: 700,
+      alt: "Example of alt text here",
     },
     {
       src: img17,
       width: 800,
-      height: 500,
+      height: 1500,
+      alt: "Example of alt text here",
     },
     {
       src: img18,
       width: 800,
       height: 600,
+      alt: "Example of alt text here",
     },
     {
       src: img19,
       width: 800,
       height: 700,
+      alt: "Example of alt text here",
     },
     {
       src: img20,
       width: 800,
       height: 400,
+      alt: "Example of alt text here",
     },
     {
       src: img21,
       width: 800,
       height: 600,
+      alt: "Example of alt text here",
     },
     {
       src: img22,
       width: 800,
       height: 600,
+      alt: "Example of alt text here",
     },
   ]
   {
@@ -145,7 +167,15 @@ function Gallery() {
     <section className="gallery">
       <h1>Gallery</h1>
       <article className="gallery_area">
-        <MasonryPhotoAlbum photos={photos} spacing={0} columns={4} />
+        <ColumnsPhotoAlbum
+          photos={photos}
+          spacing={0}
+          columns={(containerWidth) => {
+            if (containerWidth < 480) return 2
+            if (containerWidth < 768) return 3
+            return 4
+          }}
+        />
       </article>
     </section>
   )
