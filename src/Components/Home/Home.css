@@ -11,7 +11,6 @@
 .area_activity_1,
 .area_activity_2,
 .area_activity_3 {
-  background-color: blue;
   flex: 1;
   color: white;
   font-size: var(--font-size-lg);
